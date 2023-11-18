@@ -26,15 +26,18 @@ body {
 }
 .to-do-app h2 {
   padding: 10px;
+  text-align: center;
 }
 .to-do-app input {
-  width: 250px;
+  width: 100%;
   padding: 5px;
+  text-align: center;
   border-radius: 5px;
   border: 1px solid #d3d3d3;
 }
 .to-do-app button {
   width: fit-content;
+  text-align: center;
   padding: 5px;
   cursor: pointer;
   border: 1px solid #d3d3d3;
@@ -60,4 +63,39 @@ li {
   font-size: small;
   background-color: whitesmoke;
   padding: 20px;
+  justify-content: space-between;
+  display: flex;
+  border-radius: 5px;
 }
+.to-do-list li:hover{
+    background-color: rgb(214, 214, 214);
+    font-size: medium;
+  }
+li button {
+    background: azure;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+li button:hover {
+    background: rgb(0, 0, 0);
+    font-size: 14px;
+    color: white;
+}
+
+
+@keyframes fadeIn {
+from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-element {
+    animation: fadeIn 0.5s ease-in-out;
+}
+  
